@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"poppins",Arial, sans-serif; 
+}
+html{
+    font-size: 62.5%;
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+}
+ .conversion_card, .result_container{
+    width: 30%;
+    flex-shrink: 0;
+ }
+}
+.temperature_converter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    background-color: oklch(13% 0.028 261.692); 
+}
+
+/* TITLE CONTAINER */
+.title_container{
+    width: 35rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.title_icon{
+    color:rgba(112, 47, 172, 0.644) ;
+}
+.title_wrapper{
+    display: flex;
+    font-weight: 600;
+    font-size:6.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.title_heading{
+    color: #fff;
+    font-weight: 600;
+    font-size:4.5rem;
+}
+.title_paragraph{
+    color: rgba(128, 128, 128, 0.959);
+    font-weight: 100;
+    font-size: 1.6rem;
+}
+
+/* CONVERSION CARD */
+.conversion_card{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border: solid 2px rgba(128, 128, 128, 0.151) ;
+    gap: 3rem;
+    width: 45rem;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); 
+    background-color: oklch(21% 0.034 264.665) ;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+    font-size: 1.6rem;
+}
+
+/* INPUT SECTION */
+.converting_inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.converting_inputs>label{
+    color: #FFF;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.temperature_input{
+    width: 100%;
+    height: 4rem;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color:rgba(128, 128, 128, 0.151) ;
+    border: 2px solid rgba(128, 128, 128, 0.541) ;
+    color:#fff ;
+    translate: all 2s;
+}
+.temperature_input:hover{
+    transform: translateY(-1px);
+}
+.temperature_input>placeholder{
+    font-weight: 900;
+}
+
+/* DROP DOWN SECTION */
+.unit_selection_container{
+    display: flex;
+    gap: 1rem;
+}
+.from_unit_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.to_unit_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.from_unit_wrapper>label{
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.to_unit_wrapper>label{
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.unit_names{
+    font-weight: 600;
+    width: 19rem;
+    height: 50px;
+    padding: 1rem;
+    /* background: ; */
+    background:rgba(128, 128, 128, 0.151)  ;
+    border: 2px solid rgba(128, 128, 128, 0.541) ;
+    color:#fff ;
+    border-radius: 1rem;
+    margin-bottom: 7px;
+    margin-bottom: 1.5rem;
+    outline: none;
+    font-size: large;
+}
+.unit_names:hover{
+    background-color:oklch(20.992% 0.03416 263.451 / 0.979)  ;
+}
+
+.descriptions{
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.541);
+    font-size: small;
+}
+
+/* ERROR HANDLING */
+.error_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1.5rem;
+    border: solid 1px rgb(245, 73, 73);
+    background-color: rgb(243, 164, 164);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); ;
+    color: #fff;
+    width: 100%;
+    height: 3rem;
+    padding: 2rem 4rem;
+    font-weight: 700;
+    /* display: none; */
+}
+
+/* CONVERSION BUTTON */
+.conversion_button{
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    background-color: rgb(91, 15, 161);
+    color: #fff;
+    font-weight: 800;
+    border-radius: 1rem;
+    border: 2px solid rgb(91, 15, 161) ;
+    font-size: medium;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RESULT CARD */
+.result_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    color: #fff;
+    padding: 3rem;
+    border: solid 2px rgba(128, 128, 128, 0.151) ;
+    gap: 3rem;
+    width: 45rem;
+    border-radius: 2rem;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); 
+    background-color: oklch(21% 0.034 264.665) ;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    /* display: none; */
+}
+/* RESULT DISPLAY CONTAINER */
+.result_display{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #5c5cff;
+    width: 100%;
+    padding: 2.5rem 4rem;
+    border-radius: 1.2rem;
+    background-color:  #0d1117 ;
+    box-shadow: 0 0 20px rgb(92, 92, 255, 0.4);
+}
+.result_value{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
+}
+.paragraph{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+.input_result_value,
+.output_result_value {
+    font-size:xx-large;
+    font-weight: 900;
+    color: #5c5cff ;
+    /* box-shadow: 0 0 10px rgb(92, 92, 255, 0.4); */
+}
+.input_result_unit,
+.output_result_unit {
+    font-size: larger;
+    font-weight: 600;
+    color: #5c5cff ;
+    /* box-shadow: 0 0 10px rgb(92, 92, 255, 0.4); */
+}
+.equal_to{
+    font-weight: 900;
+    color:rgba(128, 128, 128, 0.61) ;
+}
+.paragraph.equivalent_paragraph{
+    margin-bottom: 2rem;
+}
+
+/* EQUIVALENTS RESULTS */
+.celsius_equivalent,
+.Farenheit_equivalent,
+.Kelvin_equivalent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 4.5rem;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color:rgba(128, 128, 128, 0.151) ;
+    border: 2px light rgba(128, 128, 128, 0.541) ;
+    color:#fff ;
+}
+.equivalent_unit_name{
+    font-size: larger;
+    font-weight: 600;
+}
+.equivalent_value{
+    font-size: larger;
+    font-weight: 600;
+}
+.equivalent_value_unit{
+    font-size: small;
+    font-weight: 900;
+}
+
+/* FOOTER CONTAINER */
+.footer_paragraph{
+    margin-top: 3rem;
+    color:rgba(128, 128, 128, 0.959) ;
+}
+
+

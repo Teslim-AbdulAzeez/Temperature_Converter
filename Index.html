@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link rel="stylesheet" href="Styles.css" />
+    <script src="Javascript.js" defer></script>
+  </head>
+  <body>
+    <section class="temperature_converter">
+      <!-- TITLE CONTAINER -->
+      <div class="title_container">
+        <div class="title_wrapper">  
+          <span class="title_icon"><i class="ph-fill ph-thermometer"></i></span>
+          <p class="title_heading">Temperature Converter</p>
+        </div>
+        <p class="title_paragraph">
+          Convert Between Celsius, Farenheit And Kelvin
+        </p>
+      </div>
+
+      <!-- CONVERTER CARD -->
+      <div class="conversion_card">
+        <!-- INPUT SECTION -->
+        <div class="converting_inputs">
+          <label for="entered_values">Temperature Value</label>
+          <input
+            type="number"
+            class="temperature_input"
+            id="entered_values"
+            placeholder="Enter Temperature"
+          />
+        </div>
+
+        <!-- DROP DOWN SECTION -->
+        <div class="unit_selection_container">
+          <!-- FROM UNIT CONTAINER -->
+          <div class="from_unit_wrapper">
+            <label for="from_temperature">From</label>
+            <select id="from_temperature" class="unit_names">
+              <option value="Celsius" class="unit_name">Celsius (°C)</option>
+              <option value="Farenheit" class="unit_name">
+                Farenheit (°F)
+              </option>
+              <option value="Kelvin" class="unit_name">Kelvin (k)</option>
+            </select>
+            <p class="from_unit_description descriptions">
+              Metric scale where water freezes at 0°C and boils at 100°C
+            </p>
+          </div>
+
+          <!-- TO UNIT CONTAINER -->
+          <div class="to_unit_wrapper">
+            <label for="to_temperature">To</label>
+            <select id="to_temperature" class="unit_names">
+              <option value="Celsius" class="unit_name">Celsius (°C)</option>
+              <option value="Farenheit" class="unit_name">
+                Farenheit (°F)
+              </option>
+              <option value="Kelvin" class="unit_name">Kelvin (k)</option>
+            </select>
+            <p class="to_unit_descripion descriptions">
+              Imperial scale where water freezes at 32°F and boils at 212°F
+            </p>
+          </div>
+        </div>
+        <div class="error_content">
+          <span class="empty">!Please enter a temperature value</span>
+        </div>
+        <button type="submit" class="conversion_button">Convert</button>
+      </div>
+
+      <!-- RESULT CARD -->
+      <div class="result_container">
+        <!-- DISPLAY CONTAINER -->
+        <div class="result_display">
+          <p class="result_label paragraph">Conversion Result</p>
+
+          <!-- RESULT VALUE -->
+          <div class="result_value">
+            <p class="input_result">
+              <span class="input_result_value">0</span>
+              <span class="input_result_unit">°C</span>
+            </p>
+            <div class="equal_to">=</div>
+            <p class="output_result">
+              <span class="output_result_value">0</span>
+              <span class="output_result_unit">°C</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- EQUIVALENTS CONTAINER -->
+        <div class="equivalent_results">
+          <p class="equivalent_paragraph paragraph">
+            All Equivalent Temperatures
+          </p>
+
+          <!-- CELSIUS EQUIVALENT RESULT -->
+          <div class="celsius_equivalent">
+            <p class="equivalent_unit_name">Celsius</p>
+            <span class="equivalent_value"
+              >0
+              <span class="equivalent_value_unit">°C</span>
+            </span>
+          </div>
+          <!-- FARENHEIT EQUIVALENT RESULT -->
+          <div class="Farenheit_equivalent">
+            <p class="equivalent_unit_name">Farenheit</p>
+            <span class="equivalent_value"
+              >0
+              <span class="equivalent_value_unit">°F</span>
+            </span>
+          </div>
+          <!-- KELVIN EQUIVALENT RESULT -->
+          <div class="Kelvin_equivalent">
+            <p class="equivalent_unit_name">Kelvin</p>
+            <span class="equivalent_value"
+              >0
+              <span class="equivalent_value_unit">K</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER CONTAINER -->
+      <div class="footer_title">
+        <p class="footer_paragraph paragraph">
+          Accurate temperature conversions
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
