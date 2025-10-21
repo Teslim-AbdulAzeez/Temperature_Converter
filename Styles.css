@@ -13,13 +13,16 @@ html{
         font-size: 50%;
 }
  .conversion_card, .result_container{
-    width: 100%;
-    flex-shrink: 0;
+    width: 50%;
+    /* flex-shrink: 0; */
  }
  .temperature_converter{
      padding: 1rem;
-    height: 110vh;
+    height: 100%;
     width: 100%;
+ }
+ body{
+    height: 100vh;
  }
 }
 .temperature_converter{
@@ -29,6 +32,7 @@ html{
     align-items: center;
     padding-top: 2rem;
     background-color: oklch(13% 0.028 261.692); 
+    /* height: 100vh; */
 }
 
 /* TITLE CONTAINER */
@@ -74,9 +78,10 @@ html{
     border-radius: 2rem;
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); 
     background-color: oklch(21% 0.034 264.665) ;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-top: 6rem;
     font-size: 1.6rem;
+
 }
 
 /* INPUT SECTION */
@@ -112,6 +117,8 @@ html{
 .unit_selection_container{
     display: flex;
     gap: 1rem;
+    align-items: center;
+    /* flex-wrap:wrap ; */
 }
 .from_unit_wrapper{
     display: flex;
@@ -136,7 +143,6 @@ html{
     width: 19rem;
     height: 50px;
     padding: 1rem;
-    /* background: ; */
     background:rgba(128, 128, 128, 0.151)  ;
     border: 2px solid rgba(128, 128, 128, 0.541) ;
     color:#fff ;
@@ -235,14 +241,12 @@ html{
     font-size:xx-large;
     font-weight: 900;
     color: #5c5cff ;
-    /* box-shadow: 0 0 10px rgb(92, 92, 255, 0.4); */
 }
 .input_result_unit,
 .output_result_unit {
     font-size: larger;
     font-weight: 600;
     color: #5c5cff ;
-    /* box-shadow: 0 0 10px rgb(92, 92, 255, 0.4); */
 }
 .equal_to{
     font-weight: 900;
