@@ -10,11 +10,16 @@ html{
 
 @media(max-width:450px){
     html{
-        font-size: 55%;
+        font-size: 50%;
 }
  .conversion_card, .result_container{
-    width: 30%;
+    width: 100%;
     flex-shrink: 0;
+ }
+ .temperature_converter{
+     padding: 1rem;
+    height: 110vh;
+    width: 100%;
  }
 }
 .temperature_converter{
