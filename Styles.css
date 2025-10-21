@@ -166,7 +166,7 @@ html{
     height: 3rem;
     padding: 2rem 4rem;
     font-weight: 700;
-    /* display: none; */
+    display: none;
 }
 
 /* CONVERSION BUTTON */
@@ -201,7 +201,7 @@ html{
     background-color: oklch(21% 0.034 264.665) ;
     flex-wrap: wrap;
     font-size: 1.6rem;
-    /* display: none; */
+    display: none;
 }
 /* RESULT DISPLAY CONTAINER */
 .result_display{
