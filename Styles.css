@@ -10,7 +10,7 @@ html{
 
 @media(max-width:450px){
     html{
-        font-size: 50%;
+        font-size: 55%;
 }
  .conversion_card, .result_container{
     width: 30%;
