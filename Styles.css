@@ -40,6 +40,7 @@ body{
     height: 100vh;
     width: 100vw;
     background-color: oklch(13% 0.028 261.692); 
+    /* padding-top: 2rem; */
  }
 
 .temperature_converter{

@@ -1,4 +1,5 @@
 //  CONVERSION CARD ELEMENTS SELECTION
+const mainBody = document.getElementById('body');
 const temperatureInput = document.getElementById('entered_values');
 const fromUnitSelect = document.getElementById('from_temperature');
 const toUnitSelect = document.getElementById('to_temperature');
@@ -131,6 +132,7 @@ function performConversion() {
   
   // Show result container
     resultContainer.style.display = 'flex';
+    mainBody.style.height = '180vh';
 }  // END OF performConversion FUNCTION
 
 
