@@ -30,8 +30,11 @@ html{
      }
      .unit_selection_container{
         align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
      }
+        .unit_names{
+            width: 100%;
+}
 }
 body{
     height: 100vh;
@@ -93,7 +96,6 @@ body{
     margin-top: 6rem;
     font-size: 1.6rem;
     flex-shrink: 0;
-
 }
 
 /* INPUT SECTION */
@@ -130,18 +132,14 @@ body{
     display: flex;
     gap: 0.5rem;
     align-items: center;
-    justify-content: space-between;
-    /* flex-wrap:wrap ; */
 }
 .from_unit_wrapper{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
 }
 .to_unit_wrapper{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
 }
 .from_unit_wrapper>label{
     color: #fff;
@@ -151,11 +149,10 @@ body{
 .to_unit_wrapper>label{
     color: #fff;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
 }
 .unit_names{
     font-weight: 600;
-    width: 19rem;
     height: 50px;
     padding: 1rem;
     background:rgba(128, 128, 128, 0.151)  ;
@@ -306,5 +303,3 @@ body{
     margin-top: 3rem;
     color:rgba(128, 128, 128, 0.959) ;
 }
-
-
