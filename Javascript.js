@@ -64,10 +64,10 @@ function convertToCelsius(value, unit) {
 
 // FUNCTION TO CONVERT CELSIUS TO ANY TARGET UNIT
 function convertFromCelsius(celsiusValue, unit) {
-  if (unit === 'Celsius') {
-    return celsiusValue;
-  } else if (unit === 'Farenheit') {
-    return (celsiusValue * 9 / 5) + 32;
+    if (unit === 'Celsius') {
+        return celsiusValue;  
+    } else if (unit === 'Farenheit') {
+        return (celsiusValue * 9) / 5 + 32;   
   } else if (unit === 'Kelvin') {
     return celsiusValue + 273.15;
   }
