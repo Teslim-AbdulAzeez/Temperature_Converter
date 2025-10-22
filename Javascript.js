@@ -132,7 +132,8 @@ function performConversion() {
   
   // Show result container
     resultContainer.style.display = 'flex';
-    mainBody.style.height = '180vh';
+    mainBody.style.height = '170vh';
+    conversionForm.style.marginBottom = '2.5rem';
 }  // END OF performConversion FUNCTION
 
 
