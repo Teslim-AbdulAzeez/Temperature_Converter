@@ -7,7 +7,6 @@ const convertButton = document.querySelector('.conversion_button');
 const conversionForm = document.querySelector('.conversion_card');
 const errorMessage = document.querySelector('.error_content');
 
-
 // RESULT DISPLAY ELEMENTS SELECTION
 const resultContainer = document.querySelector(".result_container");
 const inputResultValue = document.querySelector('.input_result_value');
@@ -48,7 +47,6 @@ function showError() {
 function hideError() {
   errorMessage.style.display = 'none';
 }
-
 
 // CONVERSION FUNCTIONS
 // FUNCTION TO CONVERT ANY TEMPERATURE TO CELSIUS (THE CENTRAL POINT)
