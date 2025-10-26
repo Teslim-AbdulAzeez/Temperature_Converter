@@ -8,7 +8,7 @@ const conversionForm = document.querySelector(".conversion_card");
 const errorMessage = document.querySelector(".error_content");
 const fromDescription = document.querySelector(".from_unit_description");
 const toDescription = document.querySelector(".to_unit_description");
-const unitName=document.querySelector(".unit_name");
+const unitName = document.querySelector(".unit_name");
 
 // RESULT DISPLAY ELEMENTS SELECTION
 const resultContainer = document.querySelector(".result_container");
@@ -16,7 +16,6 @@ const inputResultValue = document.querySelector(".input_result_value");
 const inputResultUnit = document.querySelector(".input_result_unit");
 const outputResultValue = document.querySelector(".output_result_value");
 const outputResultUnit = document.querySelector(".output_result_unit");
-
 
 // EQUIVALENT TEMPERATURE DISPLAY ELEMENTS SELECTION
 const celsiusEquivalent = document.querySelector(
@@ -83,7 +82,7 @@ function convertFromCelsius(celsiusValue, unit) {
 // FUNCTION TO ROUND TO 2 DECIMALS
 function roundToTwoDecimals(number) {
   return Math.round(number * 100) / 100;
-};
+}
 
 // FUNCTION TO PERFORM THE CONVERSION AND UPDATE THE DISPLAY
 function performConversion() {

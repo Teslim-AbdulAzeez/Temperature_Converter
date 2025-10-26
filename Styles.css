@@ -10,7 +10,7 @@ html {
 
 @media (max-width: 600px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
   .conversion_card,
   .result_container {
@@ -21,7 +21,7 @@ html {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 410px) {
   html {
     font-size: 45%;
   }
@@ -35,6 +35,14 @@ html {
   }
   .unit_names {
     width: 100%;
+  }
+}
+@media (max-width: 330px) {
+  html {
+    font-size: 40%;
+  }
+  body {
+    padding-top: 15rem;
   }
 }
 
@@ -51,6 +59,8 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 2rem;
+  /* padding-left: 5rem;
+  padding-right: 5rem; */
 }
 
 /* TITLE CONTAINER */
