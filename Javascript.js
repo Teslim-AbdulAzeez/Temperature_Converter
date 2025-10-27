@@ -142,7 +142,7 @@ function performConversion() {
 
   // Show result container
   resultContainer.style.display = "flex";
-  mainBody.style.height = "170vh";
+  mainBody.style.height = "100%";
   conversionForm.style.marginBottom = "2.5rem";
 } // END OF performConversion FUNCTION
 

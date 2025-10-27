@@ -4,10 +4,16 @@
   box-sizing: border-box;
   font-family: "poppins", Arial, sans-serif;
 }
+
+/* RESPONSIVENESS */
 html {
   font-size: 62.5%;
 }
-
+@media (min-width: 660px) {
+  html {
+    font-size: 70%;
+  }
+}
 @media (max-width: 600px) {
   html {
     font-size: 55%;
@@ -16,18 +22,10 @@ html {
   .result_container {
     width: 90%;
   }
-  .temperature_converter {
-    height: 100%;
-    width: 100%;
-  }
 }
 @media (max-width: 410px) {
   html {
     font-size: 45%;
-  }
-  .temperature_converter {
-    height: 100%;
-    width: 100%;
   }
   .unit_selection_container {
     align-items: center;
@@ -40,9 +38,6 @@ html {
 @media (max-width: 330px) {
   html {
     font-size: 40%;
-  }
-  body {
-    padding-top: 15rem;
   }
 }
 
@@ -58,9 +53,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
-  height: 100vh;
-  width: 100%;
+  padding-top: 3rem;
 }
 
 /* TITLE CONTAINER */
