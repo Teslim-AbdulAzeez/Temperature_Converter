@@ -97,7 +97,8 @@ body {
   width: 45rem;
   justify-content: center;
   border-radius: 2rem;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
   background-color: oklch(21% 0.034 264.665);
   margin-top: 6rem;
@@ -187,7 +188,8 @@ body {
   gap: 1rem;
   text-align: center;
   border-radius: 1.5rem;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
   color: rgb(245, 73, 73);
   width: 100%;
@@ -226,7 +228,8 @@ body {
   gap: 3rem;
   width: 45rem;
   border-radius: 2rem;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
   background-color: oklch(21% 0.034 264.665);
   flex-wrap: wrap;

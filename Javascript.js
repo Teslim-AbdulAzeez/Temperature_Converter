@@ -19,17 +19,14 @@ const outputResultUnit = document.querySelector(".output_result_unit");
 
 // EQUIVALENT TEMPERATURE DISPLAY ELEMENTS SELECTION
 const celsiusEquivalent = document.querySelector(
-  ".celsius_equivalent .equivalent_value"
+  ".celsius_equivalent .equivalent_value",
 );
 const fahrenheitEquivalent = document.querySelector(
-  ".Farenheit_equivalent .equivalent_value"
+  ".Farenheit_equivalent .equivalent_value",
 );
 const kelvinEquivalent = document.querySelector(
-  ".Kelvin_equivalent .equivalent_value"
+  ".Kelvin_equivalent .equivalent_value",
 );
-
-// Hide result container initially
-// resultContainer.style.display = 'none';
 
 // FUNCTION TO VALIDATE INPUT = NOT EMPTY AND A VALID NUMBER
 function isValidInput(input) {
@@ -129,10 +126,10 @@ function performConversion() {
   // CALCULATING EQUIVALENT TEMPERATURES
   const celsiusEquivalentValue = roundToTwoDecimals(celsiusValue);
   const fahrenheitEquivalentValue = roundToTwoDecimals(
-    convertFromCelsius(celsiusValue, "Farenheit")
+    convertFromCelsius(celsiusValue, "Farenheit"),
   );
   const kelvinEquivalentValue = roundToTwoDecimals(
-    convertFromCelsius(celsiusValue, "Kelvin")
+    convertFromCelsius(celsiusValue, "Kelvin"),
   );
 
   // UPDATING EQUIVALENT TEMPERATURES DISPLAY
